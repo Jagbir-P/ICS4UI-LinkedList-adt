@@ -54,7 +54,14 @@ public class LinkedList{
     }
  
     public int get(int index){
-      return 0;
+
+      Node current = this.head;
+
+      for (int i = 0; i < index-1; i++) {
+         current= current.next();
+      }
+
+      return current.getNumber();
     }
  
     public int remove(int index){

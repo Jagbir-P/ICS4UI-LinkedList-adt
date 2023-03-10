@@ -9,6 +9,6 @@ public class Test {
         list.add(2);
         list.add(3);
 
-        list.printOut();
+        System.out.println(list.get(3));
     }
 }
